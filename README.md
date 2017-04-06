@@ -179,7 +179,7 @@ rides[:24*10].plot(x='dteday', y='cnt')
 
 
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x1c1e923e550>
+    <matplotlib.axes._subplots.AxesSubplot at 0x2510cff9e10>
 
 
 
@@ -596,7 +596,7 @@ unittest.TextTestRunner().run(suite)
 
     .....
     ----------------------------------------------------------------------
-    Ran 5 tests in 0.015s
+    Ran 5 tests in 0.018s
     
     OK
     
@@ -628,8 +628,8 @@ The more hidden nodes you have, the more accurate predictions the model will mak
 import sys
 
 ### Set the hyperparameters here ###
-iterations = 10000
-learning_rate = 0.2
+iterations = 11000
+learning_rate = 0.3
 hidden_nodes = 8
 output_nodes = 1
 
@@ -656,7 +656,7 @@ for ii in range(iterations):
     losses['validation'].append(val_loss)
 ```
 
-    Progress: 100.0% ... Training loss: 0.076 ... Validation loss: 0.163
+    Progress: 100.0% ... Training loss: 0.058 ... Validation loss: 0.134
 
 
 ```python
@@ -705,6 +705,8 @@ Answer these questions about your results. How well does the model predict the d
 #### Your answer below
 
 I can able to reduce the training loss with increasing the iterations and validation loss also being reduced with the number of iterations. I have added an excel that I used to analyze various hyper parameters. Also I see that the prediction is proper during the beginning whereas it's overfitting during the end. I couldn't analyze the reason why it overfits the data during Dec 24 - Dec 31
+
+
 
 
 
